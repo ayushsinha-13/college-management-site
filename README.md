@@ -1,5 +1,5 @@
-# college-management
-Just a college management site for Summer training project .
+# College-Management-Site
+Just a college management site for Summer training project . It's mainly design by taking IIT Kharagpur into the consideration.
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -9,8 +9,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * npm
+* nodemon
+* node js
 
 
 ### Installation
@@ -23,7 +24,5 @@ This is an example of how to list things you need to use the software and how to
    
    npm install
    
-4. Enter your PORT number to 3000 in `app.js`
-   
-   port = 3000;
+3. To run locally comment the env PORT and uncomment the port = 3000;
       
