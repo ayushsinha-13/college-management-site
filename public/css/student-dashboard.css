@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+    background-color: #FAD02C;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+  }
+.container h1,p{
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+}
+.container h1{
+    text-shadow: 1px;
+}
+
+header {
+    display:block;
+    width: 100%;
+    padding: 10px;
+    background-color:rgba(7, 15, 90, 0.8);
+    backdrop-filter: blur(2px);
+    color: #ffff00;
+    text-align: center;
+}
+.item a{
+    color: azure;
+}
+.dropdown-menu a{
+    color: #000000;
+}
+.container{
+    border: 2px solid #000000;
+    color: #000000;
+    background-color:rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1.2px);
+    color: #fff;
+    padding: 0;
+    border-radius: 20px;
+    transition: transform 1s;
+}
+.heading{
+    width: 60%;
+    height: 60%;
+    border: 2px solid #fff;
+    background-color: rgba(2, 14, 14, 0.527);
+    backdrop-filter: blur(2px);
+    padding: 0;
+    border-radius: 5px;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.heading-dashboard{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    height: 70%;
+}
+table{
+    border-radius: inherit;
+    border: 0;
+}
+
+.marks{
+    height: fit-content;
+    padding: 0.4rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+.marks-academics{
+    margin-top: 1rem;
+    height: max-content;
+    padding: 0;
+}
+
+#assignment{
+    margin-top: 0;
+}
+
+.btn{
+    transition: transform 0.5s;
+}
+.btn:hover{
+    transform: scale(0.8); 
+}
+
+#round-right{
+    border-radius: 0 19px 0 0;
+    border: 0;
+}
+#round-left{
+    border-radius:  19px 0 0 0;
+    border: 0;
+}
+#middle{
+    border: 0;
+}
+
+.card{
+    height: 400px;
+    width: 320px;
+    background-color: rgba(0, 0, 0, 0.322);
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+     margin: auto;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    bottom: 0;
+    border-radius: 8px;
+    -webkit-box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+            box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+    font-family: 'Poppins',sans-serif;
+}
+.card-img{
+    height: 120px;
+    width: 120px;
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+    border-radius: 50%;
+    position: absolute;
+    margin: 30px auto 20px  auto;
+    left: 0;
+    right: 0;
+
+}
+.card-img img{
+    height: 86%;
+    border-radius: 50%;
+    margin-left: 7%;
+    margin-top: 7%;
+}
+h6{
+    margin: 0;
+}
+.desc{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 160px;
+}
+.primary-text{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    margin: 5px 0;
+}
+.secondary-text{
+    color: #c21515;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+button{
+    background-color: rgba(23, 20, 75, 0.473);
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+    border: none;
+
+}
+.details{
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: 70px;
+    padding: 5px 0;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 8px 8px;
+}
+.details>div{
+    text-align: center;
+}
+.details>div:first-child{
+    border-right: 2px solid rgba(255,255,255,0.08);
+}
+/* button{
+    width: 80%;
+    padding: 15px 0;
+    position: absolute;
+    left: 10%;
+    top: 240px;
+    border-radius: 5px;
+    outline: none;
+} */
+.fieldbox{
+    text-align: right;
+    font-size: 30px;
+}
+.databox{
+    font-size: 30px;
+    text-align: left;
+}
+.staff-box{
+    width: 30rem;
+}
+.staff-dashboard{
+    padding: 2rem 0;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    height: max-content;
+    width: max-content;
+}
+.admin-dashboard{
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    height: max-content;
+}

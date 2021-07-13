@@ -1,0 +1,36 @@
+body{
+    background-image: url("images/registration.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.heading{
+    margin: 2rem;
+    height: 60px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+}
+.heading p{
+    font-style: italic; 
+    color: rgb(43, 75, 75);
+    font-size: x-small;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    background-color: bisque;
+}
+.body{
+    margin-top: 10rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.buttonBox{
+    margin-top: 3rem;
+    text-align: center;
+}
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+  }

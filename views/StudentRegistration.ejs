@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT Kharagpur</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- BootStrap Javascript Bundle -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/00845393db.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Russo+One&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/registration-student.css">
+
+</head>
+<body>
+    <div class="heading">
+        <h1><a href="/staffdashboard" style="color: #000;">Student Registration</a></h1>
+        <p> 👆👆👆<br>
+            Click here to visit your dashboard...</p>
+    </div>
+    <div class="body">
+        <form action="/studentregistration" method="post">
+        <div class="container">
+            <div class="row">
+
+            <div class="col-lg-4 col-md-5 col-sm-6 justify-content-start" id="left">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="name" class="form-control shadow rounded" id="name" placeholder="Student Name"  name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="course">Course *</label>
+                    <select class="form-control form-control-sm shadow rounded" name="course" required>
+                        <option value="#" name="None">Select</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Mechanical">Mechanical</option>
+                    </select>    
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender *</label>
+                    <select class="form-control form-control-sm shadow rounded" name="gender" required>
+                        <option value="#">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                      </select>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-sm-6 justify-content-center" id="center">
+                <div class="form-group">
+                    <label for="uid">UID *</label>
+                    <input type="text" class="form-control shadow rounded" id="uid" placeholder="eg: 21CS001" name="uid" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password *</label>
+                    <input type="text" class="form-control shadow rounded" id="password" placeholder="eg: John001" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">Admission Year *</label>
+                    <input type="year" class="form-control shadow rounded" id="year" placeholder="eg: 2021" name="admissionYear" required>
+                </div> 
+                
+                
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-sm-6 justify-content-end" id="right">
+                <div class="form-group">
+                    <label for="dob">D.O.B *</label>
+                    <input type="date" class="form-control shadow rounded" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="blood">Blood Group *</label>
+                    <select class="form-control form-control-sm shadow rounded" id="blood" name="blood" required>
+                        <option value="#">Select</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                      </select>
+                </div>
+                <div class="form-group buttonBox">
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </div> 
+            </div>  
+            
+    </div>
+        
+    </div>
+    
+</form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+    background-image: url("images/successful.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.card{
+    background-color: rgba(133, 142, 220, 0.4);  
+    backdrop-filter: blur(2px);
+    font-family: 'Jura', sans-serif;
+    color: beige;
+    border-radius: 20px;
+    padding: auto;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    margin: 2rem auto;
+    text-align: center;
+}
+.button{
+    width: max-content;
+    margin: auto;
+}
+button{
+    width:6rem;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT Kharagpur</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- BootStrap Javascript Bundle -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/00845393db.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Russo+One&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/student-dashboard.css">
+
+</head>
+<body>
+    <script>
+        // Some random colors
+const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+
+const numBalls = 50;
+const balls = [];
+
+for (let i = 0; i < numBalls; i++) {
+  let ball = document.createElement("div");
+  ball.classList.add("ball");
+  ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+  ball.style.left = `${Math.floor(Math.random() * 80)}vw`;
+  ball.style.top = `${Math.floor(Math.random() * 75)}vh`;
+  ball.style.transform = `scale(${Math.random()})`;
+  ball.style.width = `${Math.random()}em`;
+  ball.style.height = ball.style.width;
+  
+  balls.push(ball);
+  document.body.append(ball);
+}
+
+// Keyframes
+balls.forEach((el, i, ra) => {
+  let to = {
+    x: Math.random() * (i % 2 === 0 ? -5 : 5),
+    y: Math.random() * 10
+  };
+
+  let anim = el.animate(
+    [
+      { transform: "translate(0, 0)" },
+      { transform: `translate(${to.x}rem, ${to.y}rem)` }
+    ],
+    {
+      duration: (Math.random() + 1) * 3000, // random duration
+      direction: "alternate",
+      fill: "both",
+      iterations: Infinity,
+      easing: "ease-in-out"
+    }
+  );
+});
+
+    </script>
+    <header>
+        <h1>Admin</h1>
+
+        <!-- Navbar -->
+        <div class="box">
+            <ul class="nav justify-content-center list">
+                <li class="nav-item active item">
+                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active item">
+                    <a class="nav-link" href="/studentlist">Students<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active item">
+                    <a class="nav-link" href="/adminpanel">Panel<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active item">
+                    <a class="nav-link" href="/staffregistration">Staff Registration<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active item">
+                    <a class="nav-link" href="/logout">logout<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container admin-dashboard">
+        <table class="table table-light table-hover">
+            <thead class="thead-dark">
+                <tr>
+                  <th scope="col" id="round-left">#</th>
+                  <th scope="col" id="middle">UID</th>
+                  <th scope="col" id="middle">Name</th>
+                  <th scope="col" id="middle">Gender</th>
+                  <th scope="col" id="middle">Department</th>
+                  <th scope="col" id="round-right">DOB</th>
+                </tr>
+              </thead>
+              <tbody>
+        <%for(var i=0;i<staffList.length;i++){ %>
+            <%var count = i + 1;%>
+            
+                    <tr>
+                      <th scope="col"><%=count%></th>
+                      <td><%=staffList[i].uid%></td>
+                      <td><%=staffList[i].name%></td>
+                      <td><%=staffList[i].gender%></td>
+                      <td><%=staffList[i].department%></td>
+                      <td><%=staffList[i].dob%></td>
+                    </tr>
+          <% } %>
+        </tbody>
+    </table> 
+    </div>
+
+</div>
+</body>
+</html>
