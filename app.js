@@ -44,11 +44,16 @@ const saltRounds = 10;
 
 
 /* MongoDB and Mongoose configurations */
+
+
 const mongoPort = process.env.MONGO_PORT;
 mongoose.connect(mongoPort,{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false},()=>console.log("Database connected"));
 mongoose.set("useCreateIndex", true);
 
+
 /* Schema and Model*/
+
+
 const studentSchema = new mongoose.Schema({
     uid: String,
     password: String,
@@ -383,6 +388,7 @@ app.route("/staffdashboard")
         res.redirect("/staff");
     }
 });
+
 
 //  S T A F F  -  R E G I S T R A T I O N
 
