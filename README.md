@@ -26,5 +26,5 @@ To get a local copy up and running follow these simple example steps.
    
 3. To run locally comment the env PORT and uncomment the port = 3000;
       
-Live website : https://scenic-zion-11466.herokuapp.com
+Live website : HIDDEN DUE EXCESS TRAFFIC contact admin to visit the site
 For crendentials kindly contact to Ayush Sinha (ayushsinhajsr20@gmail.com)
